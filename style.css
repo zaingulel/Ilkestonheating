@@ -14,21 +14,18 @@ main {
   position: absolute;
 }
 
-#logo {
-  color: white;
-  font-family: "Abril Fatface";
-}
-
-#home,
-#review,
-#contactus {
-  text-decoration: none;
-  color: #17181a;
+.logoImg {
+  width: 50%;
+  height: auto;
   cursor: pointer;
 }
 
-.link:hover {
-  border-color: #17181a;
+.home,
+.review,
+.contactus {
+  text-decoration: none;
+  color: #17181a;
+  cursor: pointer;
 }
 
 .nav-header {
@@ -44,6 +41,7 @@ main {
   z-index: 2;
   position: relative;
 }
+
 .line1,
 .line2 {
   width: 3rem;
@@ -51,6 +49,22 @@ main {
   margin: 0.4rem;
   background: white;
   pointer-events: none;
+}
+
+.titleContainer {
+  font-family: "Abril Fatface";
+  font-size: 2.5rem;
+  margin: 0 auto 0 auto;
+  width: 80%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #17181a;
+}
+
+.introTitle {
+  margin: 0 1rem;
 }
 
 .slide {
@@ -74,6 +88,7 @@ main {
   padding-left: 5rem;
   position: relative;
 }
+
 .hero-img {
   position: relative;
   flex: 1;
@@ -222,9 +237,9 @@ body.hide {
 }
 
 /* Other Pages */
-.fashion1,
-.fashion2,
-.fashion3 {
+.review1,
+.review2,
+.review3 {
   min-height: 90vh;
   display: flex;
   justify-content: center;
@@ -236,42 +251,42 @@ body.hide {
   flex-wrap: wrap;
   position: relative;
 }
-.fashion-img {
+.review-img {
   height: 70vh;
   flex-basis: 30rem;
 }
-.fashion-text {
+.review-text {
   flex: 1;
   position: relative;
   flex-basis: 25rem;
 }
-.fashion-img img {
+.review-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.fashion-text h1 {
+.review-text h1 {
   font-size: 6rem;
   padding: 5rem 0rem;
 }
 
-.fashion1 h1 {
+.review1 h1 {
   color: rgb(255, 139, 93);
 }
-.fashion2 h1 {
+.review2 h1 {
   color: rgb(167, 110, 231);
 }
-.fashion3 h1 {
+.review3 h1 {
   color: rgb(86, 124, 228);
 }
 
-.fashion-text p {
+.review-text p {
   font-size: 2rem;
   padding: 2rem 2rem 0rem 0rem;
   margin-bottom: 10rem;
 }
-.fashion-nr {
+.review-nr {
   font-size: 15rem;
   position: absolute;
   left: 50%;
@@ -305,14 +320,14 @@ body.hide {
   .hero-img {
     height: 50vh;
   }
-  .fashion-text h1 {
+  .review-text h1 {
     font-size: 2rem;
     padding: 1rem 0rem;
   }
-  .fashion-text p {
+  .review-text p {
     font-size: 1.2rem;
   }
-  .fashion-img img {
+  .review-img img {
     height: 50vh;
     object-position: top;
   }
@@ -352,14 +367,14 @@ body.hide {
     width: 100%;
     text-align: center;
   }
-  .fashion-text p {
+  .review-text p {
     margin-bottom: 5rem;
     padding: 0;
   }
-  .fashion-text h1 {
+  .review-text h1 {
     margin: 2rem 0rem;
   }
-  .fashion-nr {
+  .review-nr {
     font-size: 8rem;
   }
   .nav-bar {
