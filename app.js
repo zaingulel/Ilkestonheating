@@ -105,7 +105,7 @@ function cursor(e) {
 function activeCursor(e) {
   const item = e.target;
 
-  if (item.id === "logo" || item.classList.contains("burger")) {
+  if (item.classList.contains("burger")) {
     mouse.classList.add("nav-active");
   } else {
     mouse.classList.remove("nav-active");
@@ -237,7 +237,7 @@ function detailAnimation() {
 }
 
 //EventListeners
-contactus.addEventListener("click", navToggle);
+// contactus.addEventListener("click", navToggle);
 burger.addEventListener("click", navToggle);
 home.addEventListener("click", navToggle);
 review.addEventListener("click", navToggle);
