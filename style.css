@@ -17,7 +17,12 @@ main {
 .logoImg {
   width: 50%;
   height: auto;
-  cursor: ;
+}
+
+.logoImg:hover {
+  width: 50%;
+  height: auto;
+  cursor: pointer;
 }
 
 .home,
