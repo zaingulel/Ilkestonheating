@@ -3,17 +3,6 @@ let slideScene;
 let pageScene;
 let detailScene;
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   var elems = document.querySelectorAll('.tap-target');
-//   var instances = M.TapTarget.init(elems, options);
-// });
-
-// var instance = M.TapTarget.getInstance(elem);
-
-// instance.next();
-// instance.next(3); // Move next n times.
-// instance.close();
-
 // Title Intro
 function removeIntro(element) {
   if (typeof element === "string") {
@@ -36,7 +25,7 @@ introTl.from(".introTitle", {
 introTl.addLabel("titleOutro", "+=1");
 introTl.to(
   ".introTitle",
-  { duration: 0.5, opacity: 0, x: 300, ease: "power3.out" },
+  { duration: 0.5, opacity: 0, x: 200, ease: "power3.out" },
   "titleOutro"
 );
 introTl.call(removeIntro("#intro"));
@@ -64,23 +53,26 @@ function animateSlides() {
     slideTl.fromTo(revealText, { x: "0%" }, { x: "100%" }, "-=0.75");
     slideTl.fromTo(nav, { y: "-100%" }, { y: "0%" }, "-=0.5");
 
-    //Create Scene
+    //Create SlideScene
     slideScene = new ScrollMagic.Scene({
       triggerElement: slide,
       triggerHook: 0.25,
       reverse: false,
     })
       .setTween(slideTl)
+      // .addIndicators({
+      //   colorStart: "white",
+      //   colorTrigger: "white",
+      //   name: "slide",
+      // })
       .addTo(controller);
 
-    //New ANimation
+    //Create scroll page animation
     const pageTl = gsap.timeline();
-    let nextSlide = slides.length - 1 === index ? "end" : slides[index + 1];
-    pageTl.fromTo(nextSlide, { y: "0%" }, { y: "50%" });
-    pageTl.fromTo(slide, { opacity: 1, scale: 1 }, { opacity: 0, scale: 0.5 });
-    pageTl.fromTo(nextSlide, { y: "50%" }, { y: "0%" }, "-=0.5");
 
-    //Create new scene
+    pageTl.fromTo(slide, { opacity: 1, scale: 1 }, { opacity: 0, scale: 0.5 });
+
+    //Create new scroll page scene
     pageScene = new ScrollMagic.Scene({
       triggerElement: slide,
       duration: "100%",
@@ -88,6 +80,12 @@ function animateSlides() {
     })
       .setPin(slide, { pushFollowers: false })
       .setTween(pageTl)
+      // .addIndicators({
+      //   colorStart: "white",
+      //   colorTrigger: "white",
+      //   name: "page",
+      //   indent: 200,
+      // })
       .addTo(controller);
   });
 }

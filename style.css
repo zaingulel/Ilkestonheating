@@ -68,7 +68,7 @@ main {
 }
 
 .slide {
-  min-height: 100vh;
+  min-height: 90vh;
   margin: 0 auto 0 auto;
   width: 80%;
   display: flex;
