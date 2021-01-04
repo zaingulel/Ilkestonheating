@@ -56,7 +56,7 @@ function animateSlides() {
     //Create SlideScene
     slideScene = new ScrollMagic.Scene({
       triggerElement: slide,
-      triggerHook: 0.25,
+      triggerHook: 0.75,
       reverse: false,
     })
       .setTween(slideTl)

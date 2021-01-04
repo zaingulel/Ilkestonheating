@@ -28,9 +28,19 @@ main {
 .home,
 .review,
 .contactus {
+  font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: #17181a;
+  font-size: 3rem;
+}
+
+.home:hover,
+.review:hover,
+.contactus:hover {
   cursor: pointer;
+  text-decoration: none;
+  border-bottom: #17181a;
+  color: rgb(86, 124, 228);
 }
 
 .nav-header {
