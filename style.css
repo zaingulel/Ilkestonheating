@@ -52,7 +52,7 @@ main {
   color: white;
   width: 80%;
   margin: auto;
-  padding: 2rem 0rem;
+  padding: 0rem 0rem;
   z-index: 2;
   position: relative;
 }
@@ -82,7 +82,36 @@ main {
   margin: 0 1rem;
 }
 
-.slide {
+#showcase {
+  margin-top: 2rem;
+}
+
+.carousel-item {
+  height:80vh;
+}
+
+.carousel-image-1 {
+  background: url("./img/gallery1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-image-2 {
+  background: url("./img/gallery2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-image-3 {
+  background: url("./img/gallery3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slidemain {
   min-height: 90vh;
   margin: 0 auto 0 auto;
   width: 80%;
@@ -307,9 +336,12 @@ body.hide {
   left: 50%;
   bottom: 10%;
   color: white;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
+.quote {
+  font-style: italic;
+}
 .swipe {
   position: fixed;
   width: 100%;

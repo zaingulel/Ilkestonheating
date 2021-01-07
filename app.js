@@ -35,14 +35,14 @@ function animateSlides() {
   controller = new ScrollMagic.Controller();
 
   //Selectors
-  const sliders = document.querySelectorAll(".slide");
+  const sliders = document.querySelectorAll(".slidemain");
   const nav = document.querySelector(".nav-header");
 
   //Loop over each slide
-  sliders.forEach((slide, index, slides) => {
-    const revealImg = slide.querySelector(".reveal-img");
-    const img = slide.querySelector("img");
-    const revealText = slide.querySelector(".reveal-text");
+  sliders.forEach((slidemain, index, slides) => {
+    const revealImg = slidemain.querySelector(".reveal-img");
+    const img = slidemain.querySelector("img");
+    const revealText = slidemain.querySelector(".reveal-text");
 
     //GSAP
     const slideTl = gsap.timeline({
@@ -55,7 +55,7 @@ function animateSlides() {
 
     //Create SlideScene
     slideScene = new ScrollMagic.Scene({
-      triggerElement: slide,
+      triggerElement: slidemain,
       triggerHook: 0.75,
       reverse: false,
     })
@@ -70,15 +70,19 @@ function animateSlides() {
     //Create scroll page animation
     const pageTl = gsap.timeline();
 
-    pageTl.fromTo(slide, { opacity: 1, scale: 1 }, { opacity: 0, scale: 0.5 });
+    pageTl.fromTo(
+      slidemain,
+      { opacity: 1, scale: 1 },
+      { opacity: 0, scale: 0.5 }
+    );
 
     //Create new scroll page scene
     pageScene = new ScrollMagic.Scene({
-      triggerElement: slide,
+      triggerElement: slidemain,
       duration: "100%",
       triggerHook: 0,
     })
-      .setPin(slide, { pushFollowers: false })
+      .setPin(slidemain, { pushFollowers: false })
       .setTween(pageTl)
       // .addIndicators({
       //   colorStart: "white",
@@ -95,7 +99,7 @@ const mouseTxt = mouse.querySelector("span");
 const burger = document.querySelector(".burger");
 const home = document.querySelector(".home");
 const review = document.querySelector(".review");
-const contactus = document.querySelector(".bathroom-exp");
+// const contactus = document.querySelector(".bathroom-exp");
 
 function cursor(e) {
   mouse.style.top = e.pageY + "px";
@@ -216,21 +220,21 @@ function detailAnimation() {
   controller = new ScrollMagic.Controller();
   const slides = document.querySelectorAll(".detail-slide");
 
-  slides.forEach((slide, index, slides) => {
+  slides.forEach((slidemain, index, slides) => {
     const slideTl = gsap.timeline({ defaults: { duration: 1 } });
     let nextSlide = slides.length - 1 === index ? "end" : slides[index + 1];
     const nextImg = nextSlide.querySelector("img");
-    slideTl.fromTo(slide, { opacity: 1 }, { opacity: 0 });
+    slideTl.fromTo(slidemain, { opacity: 1 }, { opacity: 0 });
     slideTl.fromTo(nextSlide, { opacity: 0 }, { opacity: 1 }, "-=1");
     slideTl.fromTo(nextImg, { x: "50%" }, { x: "0%" });
 
     //Scene
     detailScene = new ScrollMagic.Scene({
-      triggerElement: slide,
+      triggerElement: slidemain,
       duration: "100%",
       triggerHook: 0,
     })
-      .setPin(slide, { pushFollowers: false })
+      .setPin(slidemain, { pushFollowers: false })
       .setTween(slideTl)
       .addTo(controller);
   });
