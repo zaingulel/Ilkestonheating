@@ -87,7 +87,7 @@ main {
 }
 
 .carousel-item {
-  height:80vh;
+  height: 80vh;
 }
 
 .carousel-image-1 {
@@ -149,6 +149,7 @@ main {
 .aboutus-span {
   color: rgb(255, 139, 93);
 }
+
 .bathroom-span {
   color: rgb(86, 124, 228);
 }
@@ -156,15 +157,18 @@ main {
 .tap-span {
   color: rgb(167, 110, 231);
 }
+
 .hero-desc h2 {
   font-family: "Abril Fatface";
   font-size: 5rem;
 }
+
 .hero-desc p {
   padding: 3rem 0rem;
   font-size: 1.5rem;
   color: rgb(223, 223, 223);
 }
+
 .explore {
   padding: 1rem 2rem;
   background: none;
@@ -176,6 +180,7 @@ main {
   align-self: flex-start;
   cursor: pointer;
 }
+
 .nav-bar {
   position: fixed;
   top: 0;
@@ -191,26 +196,75 @@ main {
   clip-path: circle(50px at 100% -10%);
   -webkit-clip-path: circle(50px at 100% -10%);
 }
+
 .burger {
   cursor: pointer;
 }
+
 .nav-links {
   font-size: 3rem;
   flex-basis: 30rem;
 }
+
 .nav-links h3 {
   padding: 3rem 0rem;
 }
+
 .contact {
   flex-basis: 30rem;
 }
+
 .contact h2 {
   font-size: 3rem;
   padding: 2rem 0rem;
 }
+
 .contact p {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-fields {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-areas: 'name email'
+ 'phone phone'
+ 'message message';
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem; }
+  .text-fields .name-input {
+    grid-area: name;
+  }
+  .text-fields .email-input {
+    grid-area: email;
+  }
+  .text-fields .phone-input
+  {
+    grid-area: phone;
+  }
+  .text-fields .message-input
+  {
+    grid-area: message;
+    height: 100px;
+  }
+  .text-fields .text-input {
+    padding: 0.5rem 1rem;
+  }
+
+button[type='submit'] {
+  width: 25%;
+}
+
+.btn-light {
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  color: #000;
+  background-color: #f4f4f4;
 }
 
 .reveal-img,
@@ -235,14 +289,17 @@ main {
   transition-property: background, transform;
   transform-origin: 75% 75%;
 }
+
 .cursor.nav-active {
   background: rgb(86, 124, 228);
   transform: scale(3);
 }
+
 .cursor.explore-active {
   background: white;
   transform: scale(3);
 }
+
 .cursor-text {
   position: absolute;
   top: 50%;
@@ -250,10 +307,12 @@ main {
   font-size: 0.5rem;
   transform: translate(-50%, -50%);
 }
+
 .title {
   position: relative;
   overflow: hidden;
 }
+
 .title-swipe {
   width: 100%;
   height: 100%;
@@ -263,12 +322,15 @@ main {
   mix-blend-mode: darken;
   transform: translateY(100%);
 }
+
 .t-swipe1 {
   background: rgb(86, 124, 228);
 }
+
 .t-swipe2 {
   background: rgb(167, 110, 231);
 }
+
 .t-swipe3 {
   background: rgb(255, 139, 93);
 }
@@ -276,6 +338,7 @@ main {
 .scrollmagic-pin-spacer {
   position: static !important;
 }
+
 body.hide {
   overflow: hidden;
 }
@@ -295,15 +358,18 @@ body.hide {
   flex-wrap: wrap;
   position: relative;
 }
+
 .review-img {
   height: 70vh;
   flex-basis: 30rem;
 }
+
 .review-text {
   flex: 1;
   position: relative;
   flex-basis: 25rem;
 }
+
 .review-img img {
   width: 100%;
   height: 100%;
@@ -318,9 +384,11 @@ body.hide {
 .review1 h1 {
   color: rgb(255, 139, 93);
 }
+
 .review2 h1 {
   color: rgb(167, 110, 231);
 }
+
 .review3 h1 {
   color: rgb(86, 124, 228);
 }
@@ -330,6 +398,7 @@ body.hide {
   padding: 2rem 2rem 0rem 0rem;
   margin-bottom: 10rem;
 }
+
 .review-nr {
   font-size: 15rem;
   position: absolute;
@@ -342,6 +411,7 @@ body.hide {
 .quote {
   font-style: italic;
 }
+
 .swipe {
   position: fixed;
   width: 100%;
@@ -350,14 +420,17 @@ body.hide {
   left: 0;
   transform: translateX(-100%);
 }
+
 .swipe1 {
   background: rgb(167, 110, 231);
   z-index: 5;
 }
+
 .swipe2 {
   background: rgb(86, 124, 228);
   z-index: 4;
 }
+
 .swipe3 {
   background: rgb(255, 139, 93);
   z-index: 3;
