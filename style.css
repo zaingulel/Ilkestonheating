@@ -27,7 +27,8 @@ main {
 
 .home,
 .review,
-.contactus {
+.services,
+.gallery {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: #17181a;
@@ -36,7 +37,8 @@ main {
 
 .home:hover,
 .review:hover,
-.contactus:hover {
+.services:hover,
+.gallery:hover {
   cursor: pointer;
   text-decoration: none;
   border-bottom: #17181a;

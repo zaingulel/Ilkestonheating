@@ -99,7 +99,8 @@ const mouseTxt = mouse.querySelector("span");
 const burger = document.querySelector(".burger");
 const home = document.querySelector(".home");
 const review = document.querySelector(".review");
-// const contactus = document.querySelector(".bathroom-exp");
+const services = document.querySelector(".services");
+const gallery = document.querySelector(".gallery");
 
 function cursor(e) {
   mouse.style.top = e.pageY + "px";
@@ -154,6 +155,8 @@ barba.init({
         logo.href = "./index.html";
         home.href = "./index.html";
         review.href = "./aboutus/index.html";
+        gallery.href = "./gallery.html";
+        services.href = "./services.html";
       },
       beforeLeave() {
         slideScene.destroy();
@@ -167,6 +170,38 @@ barba.init({
         logo.href = "../index.html";
         home.href = "../index.html";
         review.href = "./index.html";
+        gallery.href = "./gallery.html";
+        services.href = "./services.html";
+        detailAnimation();
+      },
+      beforeLeave() {
+        controller.destroy();
+        detailScene.destroy();
+      },
+    },
+    {
+      namespace: "gallery",
+      beforeEnter() {
+        logo.href = "./index.html";
+        home.href = "./index.html";
+        review.href = "./aboutus/index.html";
+        gallery.href = "./gallery.html";
+        services.href = "./services.html";
+        detailAnimation();
+      },
+      beforeLeave() {
+        controller.destroy();
+        detailScene.destroy();
+      },
+    },
+    {
+      namespace: "services",
+      beforeEnter() {
+        logo.href = "./index.html";
+        home.href = "./index.html";
+        review.href = "./aboutus/index.html";
+        gallery.href = "./gallery.html";
+        services.href = "./services.html";
         detailAnimation();
       },
       beforeLeave() {
@@ -241,7 +276,8 @@ function detailAnimation() {
 }
 
 //EventListeners
-// contactus.addEventListener("click", navToggle);
+gallery.addEventListener("click", navToggle);
+services.addEventListener("click", navToggle);
 burger.addEventListener("click", navToggle);
 home.addEventListener("click", navToggle);
 review.addEventListener("click", navToggle);
