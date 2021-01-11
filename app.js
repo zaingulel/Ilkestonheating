@@ -102,6 +102,7 @@ const review = document.querySelector(".review");
 const services = document.querySelector(".services");
 const gallery = document.querySelector(".gallerylnk");
 const contactbtn = document.querySelector(".bathroom-exp");
+const tapbtn = document.querySelector(".tap-exp");
 
 function cursor(e) {
   mouse.style.top = e.pageY + "px";
@@ -159,7 +160,9 @@ barba.init({
         gallery.href = "./gallery.html";
         services.href = "./services.html";
         const contactbtn = document.querySelector(".bathroom-exp");
+        const tapbtn = document.querySelector(".tap-exp");
         contactbtn.addEventListener("click", navToggle);
+        tapbtn.addEventListener("click", navToggle);
       },
       beforeLeave() {
         slideScene.destroy();
@@ -287,6 +290,7 @@ burger.addEventListener("click", navToggle);
 home.addEventListener("click", navToggle);
 review.addEventListener("click", navToggle);
 contactbtn.addEventListener("click", navToggle);
+tapbtn.addEventListener("click", navToggle);
 
 // Mouse hover animates slide title
 window.addEventListener("mousemove", cursor);
