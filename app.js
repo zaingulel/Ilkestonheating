@@ -100,7 +100,8 @@ const burger = document.querySelector(".burger");
 const home = document.querySelector(".home");
 const review = document.querySelector(".review");
 const services = document.querySelector(".services");
-const gallery = document.querySelector(".gallery");
+const gallery = document.querySelector(".gallerylnk");
+const contactbtn = document.querySelector(".bathroom-exp");
 
 function cursor(e) {
   mouse.style.top = e.pageY + "px";
@@ -154,9 +155,11 @@ barba.init({
         animateSlides();
         logo.href = "./index.html";
         home.href = "./index.html";
-        review.href = "./aboutus/index.html";
+        review.href = "./reviews.html";
         gallery.href = "./gallery.html";
         services.href = "./services.html";
+        const contactbtn = document.querySelector(".bathroom-exp");
+        contactbtn.addEventListener("click", navToggle);
       },
       beforeLeave() {
         slideScene.destroy();
@@ -167,9 +170,9 @@ barba.init({
     {
       namespace: "review",
       beforeEnter() {
-        logo.href = "../index.html";
-        home.href = "../index.html";
-        review.href = "./index.html";
+        logo.href = "./index.html";
+        home.href = "./index.html";
+        review.href = "./reviews.html";
         gallery.href = "./gallery.html";
         services.href = "./services.html";
         detailAnimation();
@@ -184,7 +187,7 @@ barba.init({
       beforeEnter() {
         logo.href = "./index.html";
         home.href = "./index.html";
-        review.href = "./aboutus/index.html";
+        review.href = "./reviews.html";
         gallery.href = "./gallery.html";
         services.href = "./services.html";
         detailAnimation();
@@ -199,7 +202,7 @@ barba.init({
       beforeEnter() {
         logo.href = "./index.html";
         home.href = "./index.html";
-        review.href = "./aboutus/index.html";
+        review.href = "./reviews.html";
         gallery.href = "./gallery.html";
         services.href = "./services.html";
         detailAnimation();
@@ -227,8 +230,10 @@ barba.init({
       },
       enter({ current, next }) {
         let done = this.async();
+
         //Scroll to the top
         window.scrollTo(0, 0);
+
         //An Animation
         const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
         tl.fromTo(
@@ -281,5 +286,8 @@ services.addEventListener("click", navToggle);
 burger.addEventListener("click", navToggle);
 home.addEventListener("click", navToggle);
 review.addEventListener("click", navToggle);
+contactbtn.addEventListener("click", navToggle);
+
+// Mouse hover animates slide title
 window.addEventListener("mousemove", cursor);
 window.addEventListener("mouseover", activeCursor);

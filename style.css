@@ -28,7 +28,7 @@ main {
 .home,
 .review,
 .services,
-.gallery {
+.gallerylnk {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: #17181a;
@@ -38,7 +38,7 @@ main {
 .home:hover,
 .review:hover,
 .services:hover,
-.gallery:hover {
+.gallerylnk:hover {
   cursor: pointer;
   text-decoration: none;
   border-bottom: #17181a;
@@ -229,31 +229,31 @@ main {
 .text-fields {
   margin-top: 2rem;
   display: grid;
-  grid-template-areas: 'name email'
- 'phone phone'
- 'message message';
+  grid-template-areas:
+    "name email"
+    "phone phone"
+    "message message";
   grid-gap: 1.2rem;
-  margin-bottom: 1.2rem; }
-  .text-fields .name-input {
-    grid-area: name;
-  }
-  .text-fields .email-input {
-    grid-area: email;
-  }
-  .text-fields .phone-input
-  {
-    grid-area: phone;
-  }
-  .text-fields .message-input
-  {
-    grid-area: message;
-    height: 100px;
-  }
-  .text-fields .text-input {
-    padding: 0.5rem 1rem;
-  }
+  margin-bottom: 1.2rem;
+}
+.text-fields .name-input {
+  grid-area: name;
+}
+.text-fields .email-input {
+  grid-area: email;
+}
+.text-fields .phone-input {
+  grid-area: phone;
+}
+.text-fields .message-input {
+  grid-area: message;
+  height: 100px;
+}
+.text-fields .text-input {
+  padding: 0.5rem 1rem;
+}
 
-button[type='submit'] {
+button[type="submit"] {
   width: 25%;
 }
 
@@ -348,7 +348,9 @@ body.hide {
 /* Other Pages */
 .review1,
 .review2,
-.review3 {
+.review3,
+.review4,
+.review5 {
   min-height: 90vh;
   display: flex;
   justify-content: center;
@@ -383,11 +385,13 @@ body.hide {
   padding: 5rem 0rem;
 }
 
-.review1 h1 {
+.review1 h1,
+.review4 h1 {
   color: rgb(255, 139, 93);
 }
 
-.review2 h1 {
+.review2 h1,
+.review5 h1 {
   color: rgb(167, 110, 231);
 }
 
@@ -407,7 +411,7 @@ body.hide {
   left: 50%;
   bottom: 10%;
   color: white;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .quote {
