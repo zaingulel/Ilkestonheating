@@ -295,3 +295,4 @@ tapbtn.addEventListener("click", navToggle);
 // Mouse hover animates slide title
 window.addEventListener("mousemove", cursor);
 window.addEventListener("mouseover", activeCursor);
+

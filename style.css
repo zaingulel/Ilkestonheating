@@ -12,8 +12,7 @@ body {
 }
 
 .review,
-.home,
-.gallery {
+.home {
   position: absolute;
 }
 
@@ -91,6 +90,42 @@ body {
   background: rgb(255, 139, 93);
   display: block;
   margin: 0 auto 1rem auto;
+}
+
+.cases img:hover {
+  opacity: 0.7;
+}
+
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #f8f8f8;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+/* FLex Grid */
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
 
 .text-center {
