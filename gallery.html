@@ -11,6 +11,7 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="./lightbox.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
@@ -44,31 +45,65 @@
   </header>
   <main data-barba="container" data-barba-namespace="gallery">
 
-<section id="cases" class="cases flex-grid section-padding">
-  <header class="section-header">
-    <h4>This is what we do</h4>
-    <h2>Business Cases</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique praesentium sapiente rerum error itaque eveniet aperiam</p>
-    <div class="row">
-      <div class="column">
-        <img src="./img/gallery1.jpg" alt="">
-        <img src="./img/gallery2.jpg" alt="">
+    <!-- Image gallery -->
+    <section id="cases" class="cases flex-grid section-padding text-center py-3">
+      <div class="container">
+        <p class="lead">
+          Gallery
+        </p>
+        <div class="bottom-line"></div>
       </div>
-      <div class="column">
-        <img src="./img/gallery3.jpg" alt="">
-        <img src="./img/gallery4.jpg" alt="">
+      <div class="row">
+        <div class="column">
+          <a
+            href="./img/gallery1.jpg"
+            data-lightbox="cases">
+            <img src="./img/gallery1.jpg" alt="" />
+          </a>
+          <a
+            href="./img/gallery2.jpg"
+            data-lightbox="cases">
+            <img src="./img/gallery2.jpg" alt="" />
+          </a>
+        </div>
+        <div class="column">
+          <a
+            href="./img/gallery3.jpg"
+            data-lightbox="cases">
+            <img src="./img/gallery3.jpg" alt="" />
+          </a>
+          <a
+            href="./img/gallery4.jpg"
+            data-lightbox="cases">
+            <img src="./img/gallery4.jpg" alt="" />
+          </a>
+        </div>
+        <div class="column">
+          <a
+            href="./img/gallery5.jpg"
+            data-lightbox="cases">
+            <img src="./img/gallery5.jpg" alt="" />
+          </a>
+          <a
+            href="./img/gallery6.jpg"
+            data-lightbox="cases">
+            <img src="./img/gallery6.jpg" alt="" />
+          </a>
+        </div>
+        <div class="column">
+          <a
+            href="./img/gallery7.jpg"
+            data-lightbox="cases">
+            <img src="./img/gallery7.jpg" alt="" />
+          </a>
+          <a
+            href="./img/gallery8.jpg"
+            data-lightbox="cases">
+            <img src="./img/gallery8.jpg" alt="" />
+          </a>
+        </div>
       </div>
-      <div class="column">
-        <img src="./img/gallery5.jpg" alt="">
-        <img src="./img/gallery6.jpg" alt="">
-      </div>
-      <div class="column">
-        <img src="./img/gallery7.jpg" alt="">
-        <img src="./img/gallery8.jpg" alt="">
-      </div>
-    </div>
-  </header>
-</section>
+    </section>
 
   </main>
 
@@ -112,8 +147,14 @@
   <div class="swipe swipe2"></div>
   <div class="swipe swipe3"></div>
 
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+  <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+  <script src="./lightbox.min.js"></script>
+  <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
