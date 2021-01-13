@@ -97,9 +97,9 @@ function animateSlides() {
 const mouse = document.querySelector(".cursor");
 const mouseTxt = mouse.querySelector("span");
 const burger = document.querySelector(".burger");
-const home = document.querySelector(".home");
-const review = document.querySelector(".review");
-const services = document.querySelector(".services");
+const home = document.querySelector(".homelnk");
+const review = document.querySelector(".reviewlnk");
+const services = document.querySelector(".serviceslnk");
 const gallery = document.querySelector(".gallerylnk");
 const contactbtn = document.querySelector(".bathroom-exp");
 const tapbtn = document.querySelector(".tap-exp");
