@@ -138,6 +138,10 @@ body {
   text-align: center;
 }
 
+.py-2 {
+  padding: 2rem 0;
+}
+
 .py-3 {
   padding: 2rem 0;
 }
@@ -625,6 +629,118 @@ body.hide {
   background: rgb(255, 139, 93);
   z-index: 3;
 }
+
+/* Awards and certs */
+#about-a {
+  margin-top: 4rem;
+}
+
+#about-a .certs-1 {
+  grid-area: ct1;
+  font-size: 1rem;
+}
+#about-a .certs-1 img {
+  margin-bottom: 1rem;
+  height: 12.5rem;
+  width: 12.5rem;
+}
+
+#about-a .certs-2 {
+  grid-area: ct2;
+  font-size: 1rem;
+}
+#about-a .certs-2 img {
+  margin-bottom: 1rem;
+  height: 12.5rem;
+  width: 12.5rem;
+}
+
+#about-a .certs-3 {
+  grid-area: ct3;
+  font-size: 1rem;
+}
+#about-a .certs-3 img {
+  margin-bottom: 1rem;
+  height: 12.5rem;
+  width: 12.5rem;
+}
+
+#about-a .certs-4 {
+  grid-area: ct4;
+  font-size: 1rem;
+}
+#about-a .certs-4 img {
+  margin-bottom: 1rem;
+  height: 12.5rem;
+  width: 12.5rem;
+}
+
+#about-a .certs-5 {
+  grid-area: ct5;
+  font-size: 1rem;
+}
+#about-a .certs-5 img {
+  margin-bottom: 1rem;
+  height: 12.5rem;
+  width: 12.5rem;
+}
+
+#about-a .certs-6 {
+  grid-area: ct6;
+  font-size: 1rem;
+}
+#about-a .certs-6 img {
+  margin-bottom: 1rem;
+  height: 12.5rem;
+  width: 12.5rem;
+}
+
+#about-a .about-info {
+  display: grid;
+  grid-template-areas:
+    "bioimage bio bio"
+    "ct1 ct2 ct3"
+    "ct4 ct5 ct6";
+  grid-gap: 1.2rem;
+}
+
+#main-footer {
+  background: #17181d;
+  color: #fff;
+  height: 5rem;
+}
+
+#main-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+}
+#main-footer .footer-content .social .fab {
+  margin-right: 1rem;
+  border: 2px #fff solid;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#main-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#main-footer .footer-content .social .fab.fac:hover {
+  background: #3b5999;
+}
+
+#main-footer .footer-content .social .fab.ins:hover {
+  background: #e4405f;
+}
+
+
 
 @media screen and (max-width: 1500px) {
   .hero-img {
