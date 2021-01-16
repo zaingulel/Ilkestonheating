@@ -15,11 +15,6 @@ body {
   width: 100%;
 }
 
-/* .review,
-.home {
-  position: absolute;
-} */
-
 .logoImg {
   width: 50%;
   height: auto;
@@ -138,10 +133,7 @@ body {
   text-align: center;
 }
 
-.py-2 {
-  padding: 2rem 0;
-}
-
+.py-2,
 .py-3 {
   padding: 2rem 0;
 }
@@ -631,8 +623,13 @@ body.hide {
 }
 
 /* Awards and certs */
+.about-info {
+  margin-top: 3rem;
+}
+
 #about-a {
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 #about-a .certs-1 {
@@ -715,6 +712,7 @@ body.hide {
   justify-content: space-between;
   height: 5rem;
   align-items: center;
+  font-size: 1.2rem;
 }
 #main-footer .footer-content .social .fab {
   margin-right: 1rem;
@@ -734,13 +732,13 @@ body.hide {
 
 #main-footer .footer-content .social .fab.fac:hover {
   background: #3b5999;
+  cursor: pointer;
 }
 
 #main-footer .footer-content .social .fab.ins:hover {
   background: #e4405f;
+  cursor: pointer;
 }
-
-
 
 @media screen and (max-width: 1500px) {
   .hero-img {
