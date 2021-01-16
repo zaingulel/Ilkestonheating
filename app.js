@@ -163,6 +163,8 @@ barba.init({
         const tapbtn = document.querySelector(".tap-exp");
         contactbtn.addEventListener("click", navToggle);
         tapbtn.addEventListener("click", navToggle);
+        window.addEventListener("mousemove", cursor);
+        window.addEventListener("mouseover", activeCursor);
       },
       beforeLeave() {
         slideScene.destroy();
@@ -178,6 +180,8 @@ barba.init({
         review.href = "./reviews.html";
         gallery.href = "./gallery.html";
         services.href = "./services.html";
+        window.addEventListener("mousemove", cursor);
+        window.addEventListener("mouseover", activeCursor);
         detailAnimation();
       },
       beforeLeave() {
@@ -193,6 +197,8 @@ barba.init({
         review.href = "./reviews.html";
         gallery.href = "./gallery.html";
         services.href = "./services.html";
+        window.addEventListener("mousemove", cursor);
+        window.addEventListener("mouseover", activeCursor);
         detailAnimation();
       },
       beforeLeave() {
@@ -208,6 +214,8 @@ barba.init({
         review.href = "./reviews.html";
         gallery.href = "./gallery.html";
         services.href = "./services.html";
+        window.addEventListener("mousemove", cursor);
+        window.addEventListener("mouseover", activeCursor);
         detailAnimation();
       },
       beforeLeave() {
@@ -259,6 +267,7 @@ barba.init({
   ],
 });
 
+// Slide animation
 function detailAnimation() {
   controller = new ScrollMagic.Controller();
   const slides = document.querySelectorAll(".detail-slide");
