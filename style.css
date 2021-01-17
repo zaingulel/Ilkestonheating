@@ -447,6 +447,7 @@ button[type="submit"] {
   opacity: 0.9;
   color: #000;
   background-color: #f4f4f4;
+  margin-top: 1rem;
 }
 
 .reveal-img,
