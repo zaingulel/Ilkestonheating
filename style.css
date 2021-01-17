@@ -385,7 +385,7 @@ body {
 
 .nav-links {
   font-size: 3rem;
-  flex-basis: 30rem;
+  flex-basis: auto;
 }
 
 .nav-links h3 {
@@ -438,7 +438,7 @@ button[type="submit"] {
 }
 
 .btn-light {
-  display: inline-block;
+  display: flex;
   font-weight: bold;
   padding: 0.8rem 2rem;
   transition: all 0.5s;
@@ -448,6 +448,8 @@ button[type="submit"] {
   color: #000;
   background-color: #f4f4f4;
   margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .reveal-img,
@@ -758,15 +760,37 @@ body.hide {
   }
 }
 
+/* mobile */
 @media screen and (max-width: 1024px) {
   main {
     width: 100%;
-    margin: 0;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
   }
-  .slide {
+
+  .logoImg {
+    width: 40%;
+    height: auto;
+    margin-top: 0.7rem;
+  }
+
+  .titleContainer {
+    font-size: 1rem;
+    width: 90%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #f8f8f8;
+    background: #17181a;
+  }
+
+  .slidemain {
     display: block;
     width: 100%;
     text-align: center;
+    justify-content: center;
   }
   .hero-desc {
     padding: 0;
@@ -784,6 +808,11 @@ body.hide {
     line-height: 1.5rem;
     text-align: center;
   }
+
+  .lead {
+    font-size: 2rem;
+  }
+
   .explore {
     width: 60%;
     margin: auto;
@@ -806,16 +835,49 @@ body.hide {
     display: block;
   }
   .nav-links {
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
+    justify-content: center;
   }
+  .nav-links h3 {
+    font-size: 0.2rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .contact {
+    flex-basis: auto;
+    display: block;
+  }
+
   .contact h2 {
-    font-size: 3rem;
+    font-size: 1rem;
     text-align: center;
   }
   .contact p {
-    font-size: 1.2rem;
-    padding: 2rem;
+    font-size: 1rem;
+    padding: 0.5rem;
     text-align: center;
+  }
+  .cursor, .cursor-text {
+    display: none;
+  }
+
+  .main-footer {
+    font-size: 0.1rem;
+  }
+  
+  .rm {
+    display: none;
+  }
+
+  .footer-content .container {
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+
+  .fa-star {
+    font-size: 42px;
   }
 }
