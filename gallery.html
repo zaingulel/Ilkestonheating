@@ -171,13 +171,14 @@
         <br>Email: ilkestonheating@gmail.com
       </p>
       <div>
-        <form name="contact2" method="POST" data-netlify="true">
+        <form action="POST" name="contactgallery" method="POST" data-netlify="true">
           <div class="text-fields">
-            <input type="text" class="text-input name-input" placeholder="Name">
-            <input type="email" class="text-input email-input" placeholder="Email Address">
-            <input type="text" class="text-input phone-input" placeholder="Phone Number">
-            <textarea class="text-input message-input" placeholder="Enter Message"></textarea>
+            <input type="text" name="name" class="text-input name-input" placeholder="Name">
+            <input type="email" name="email" class="text-input email-input" placeholder="Email Address">
+            <input type="text" name="phone" class="text-input phone-input" placeholder="Phone Number">
+            <textarea class="text-input message-input" name="message" placeholder="Enter Message"></textarea>
           </div>
+          <div data-netlify-recaptcha="true"></div>
           <button type="submit" class="btn-light">Submit</button>
         </form>
       </div>
