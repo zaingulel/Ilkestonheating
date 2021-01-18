@@ -893,7 +893,7 @@ body.hide {
   }
 
   .titleContainer {
-    font-size: 1rem;
+    font-size: 0.8rem;
     width: 90%;
     display: inline-flex;
     justify-content: center;
@@ -904,7 +904,8 @@ body.hide {
 
   .slidemain {
     display: block;
-    width: 100%;
+    width: 80%;
+    height: auto;
     text-align: center;
     justify-content: center;
   }
@@ -1041,4 +1042,5 @@ body.hide {
     position: relative;
     flex-basis: auto;
   }
+  
 }
