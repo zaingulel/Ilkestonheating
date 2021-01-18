@@ -778,13 +778,13 @@ body.hide {
     display: block;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
   }
-  
+
   .item {
     position: relative;
     background: #17181a;
     overflow: hidden;
   }
-  
+
   .item::after {
     content: "";
     position: absolute;
@@ -798,34 +798,34 @@ body.hide {
     transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
     transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
   }
-  
+
   .item::after {
     transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
   }
-  
+
   .item .item-image {
     transform: scale(1.2);
   }
-  
+
   .item .item-text {
     opacity: 1;
     transform: translateY(0);
   }
-  
+
   .item-image {
     height: auto;
     transform: translateZ(0);
     display: block;
     transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
   }
-  
+
   .item-image::before {
     content: "";
     display: block;
     padding-top: 75%;
     overflow: hidden;
   }
-  
+
   .item-image img {
     position: absolute;
     top: 0;
@@ -836,7 +836,7 @@ body.hide {
     object-fit: contain;
     margin: 3rem 3rem;
   }
-  
+
   .item-text {
     position: absolute;
     top: 0;
@@ -852,20 +852,20 @@ body.hide {
       transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
     transition-delay: 300ms;
   }
-  
+
   .item-text-wrap {
     position: absolute;
     width: 100%;
     top: 50%;
     transform: translateY(-50%);
   }
-  
+
   .item-text-title {
     font-size: 2rem;
     padding: 1rem 1rem;
     margin: 5px 0 0 0;
   }
-  
+
   .item-text-category {
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -885,7 +885,7 @@ body.hide {
       "ct6";
     grid-gap: 1.2rem;
   }
-  
+
   .logoImg {
     width: 40%;
     height: auto;
@@ -966,7 +966,8 @@ body.hide {
     display: block;
   }
 
-  .contact h2, h3 {
+  .contact h2,
+  h3 {
     font-size: 2rem;
     text-align: center;
   }
@@ -975,14 +976,15 @@ body.hide {
     padding: 0.5rem;
     text-align: center;
   }
-  .cursor, .cursor-text {
+  .cursor,
+  .cursor-text {
     display: none;
   }
 
   .main-footer {
     font-size: 0.1rem;
   }
-  
+
   .rm {
     display: none;
   }
@@ -994,10 +996,13 @@ body.hide {
   }
 
   .fa-star {
-    font-size: 42px;
+    font-size: 30px;
   }
 
-  .homelnk, .reviewlnk, .serviceslnk, .gallerylnk {
+  .homelnk,
+  .reviewlnk,
+  .serviceslnk,
+  .gallerylnk {
     font-size: 2rem;
   }
 
@@ -1019,4 +1024,21 @@ body.hide {
     padding: 4px 4px;
   }
 
+  .review-img img {
+    width: 90%;
+    height: auto;
+  }
+
+  .review-img {
+    height: auto;
+    flex-basis: auto;
+  }
+
+  .review-text {
+    flex: 1;
+    width: 90%;
+    height: auto;
+    position: relative;
+    flex-basis: auto;
+  }
 }
