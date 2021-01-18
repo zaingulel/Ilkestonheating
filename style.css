@@ -947,6 +947,7 @@ body.hide {
   }
   .detail-slide {
     width: 100%;
+    height: auto;
     text-align: center;
   }
   .review-text p {
