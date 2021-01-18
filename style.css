@@ -765,12 +765,23 @@ body.hide {
 
 /* mobile */
 @media screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
   main {
     width: 100%;
     margin: auto;
     display: block;
     justify-content: center;
     align-items: center;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
   }
 
   /* Our Services mobile */
@@ -1042,5 +1053,4 @@ body.hide {
     position: relative;
     flex-basis: auto;
   }
-  
 }
