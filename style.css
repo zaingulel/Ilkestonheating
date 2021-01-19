@@ -399,7 +399,7 @@ body {
 /* Contact Form */
 .maincontact {
   color: #f4f4f4;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   text-align: center;
   padding: 4rem 0;
@@ -1004,7 +1004,7 @@ body.hide {
 
   .contact p {
     font-size: 1rem;
-  
+
     margin: 0 auto;
     text-align: center;
   }
