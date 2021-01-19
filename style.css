@@ -1030,7 +1030,7 @@ body.hide {
     display: none;
   }
 
-  .rm {
+  .rm, .rmmain {
     display: none;
   }
 
