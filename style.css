@@ -740,6 +740,19 @@ body.hide {
   padding: 0.5rem;
 }
 
+.fa-instagram-square, .fa-facebook-square {
+  color: #17181a;
+}
+
+.fa-facebook-square:hover {
+  color: #3b5999;
+  cursor: pointer;
+}
+
+.fa-instagram-square:hover {
+  color: #e4405f;
+}
+
 #main-footer a {
   color: #fff;
   text-decoration: none;
