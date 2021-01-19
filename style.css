@@ -399,7 +399,7 @@ body {
 /* Contact Form */
 .maincontact {
   color: #f4f4f4;
-  width: 66%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
   padding: 4rem 0;
@@ -997,16 +997,35 @@ body.hide {
 
   .contact h2,
   h3 {
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
     padding: 0.5rem 0;
   }
 
   .contact p {
     font-size: 1rem;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
+    margin: 0;
     text-align: center;
+    line-height: 0;
   }
+
+  .text-fields {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-areas:
+      "name"
+      "email"
+      "phone"
+      "message";
+    grid-gap: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn-light {
+    margin: 0 auto;
+  }
+
   .cursor,
   .cursor-text {
     display: none;
