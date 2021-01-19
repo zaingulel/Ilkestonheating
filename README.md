@@ -45,6 +45,8 @@ To run this project, open the 'index.html' file located  in the root folder
 
 
 ## Sources
+Images from https://unsplash.com/
+
 This project is inspired by: 
 - DevEd's The Creative JS Course https://developedbyed.com/
 - Traversy Media's Modern HTML & CSS From The Beginning https://www.udemy.com/course/modern-html-css-from-the-beginning/
