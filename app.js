@@ -79,7 +79,7 @@ function animateSlides() {
     //Create new scroll page scene
     pageScene = new ScrollMagic.Scene({
       triggerElement: slidemain,
-      duration: "100%",
+      duration: "90%",
       triggerHook: 0,
     })
       .setPin(slidemain, { pushFollowers: false })
@@ -103,6 +103,7 @@ const services = document.querySelector(".serviceslnk");
 const gallery = document.querySelector(".gallerylnk");
 const contactbtn = document.querySelector(".bathroom-exp");
 const tapbtn = document.querySelector(".tap-exp");
+const contactus = document.querySelector(".contactlnk");
 
 function cursor(e) {
   mouse.style.top = e.pageY + "px";
@@ -159,6 +160,7 @@ barba.init({
         review.href = "./reviews.html";
         gallery.href = "./gallery.html";
         services.href = "./services.html";
+        contactus.href = "./contactus.html";
         const contactbtn = document.querySelector(".bathroom-exp");
         const tapbtn = document.querySelector(".tap-exp");
         contactbtn.addEventListener("click", navToggle);
@@ -180,6 +182,7 @@ barba.init({
         review.href = "./reviews.html";
         gallery.href = "./gallery.html";
         services.href = "./services.html";
+        contactus.href = "./contactus.html";
         window.addEventListener("mousemove", cursor);
         window.addEventListener("mouseover", activeCursor);
         detailAnimation();
@@ -197,6 +200,7 @@ barba.init({
         review.href = "./reviews.html";
         gallery.href = "./gallery.html";
         services.href = "./services.html";
+        contactus.href = "./contactus.html";
         window.addEventListener("mousemove", cursor);
         window.addEventListener("mouseover", activeCursor);
         detailAnimation();
@@ -214,6 +218,25 @@ barba.init({
         review.href = "./reviews.html";
         gallery.href = "./gallery.html";
         services.href = "./services.html";
+        contactus.href = "./contactus.html";
+        window.addEventListener("mousemove", cursor);
+        window.addEventListener("mouseover", activeCursor);
+        detailAnimation();
+      },
+      beforeLeave() {
+        controller.destroy();
+        detailScene.destroy();
+      },
+    },
+    {
+      namespace: "contactus",
+      beforeEnter() {
+        logo.href = "./index.html";
+        home.href = "./index.html";
+        review.href = "./reviews.html";
+        gallery.href = "./gallery.html";
+        services.href = "./services.html";
+        contactus.href = "./contactus.html";
         window.addEventListener("mousemove", cursor);
         window.addEventListener("mouseover", activeCursor);
         detailAnimation();
@@ -278,7 +301,7 @@ function detailAnimation() {
     const nextImg = nextSlide.querySelector("img");
     slideTl.fromTo(slidemain, { opacity: 1 }, { opacity: 0 });
     slideTl.fromTo(nextSlide, { opacity: 0 }, { opacity: 1 }, "-=1");
-    slideTl.fromTo(nextImg, { x: "50%" }, { x: "0%" });
+    slideTl.fromTo(nextImg, { x: "60%" }, { x: "0%" });
 
     //Scene
     detailScene = new ScrollMagic.Scene({
@@ -300,8 +323,9 @@ home.addEventListener("click", navToggle);
 review.addEventListener("click", navToggle);
 contactbtn.addEventListener("click", navToggle);
 tapbtn.addEventListener("click", navToggle);
+contactus.addEventListener("click", navToggle);
+
 
 // Mouse hover animates slide title
 window.addEventListener("mousemove", cursor);
 window.addEventListener("mouseover", activeCursor);
-

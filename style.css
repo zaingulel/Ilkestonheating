@@ -30,7 +30,8 @@ body {
 .homelnk,
 .reviewlnk,
 .serviceslnk,
-.gallerylnk {
+.gallerylnk,
+.contactlnk {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: #17181a;
@@ -41,7 +42,8 @@ body {
 .homelnk:hover,
 .reviewlnk:hover,
 .serviceslnk:hover,
-.gallerylnk:hover {
+.gallerylnk:hover,
+.contactlnk:hover {
   cursor: pointer;
   text-decoration: none;
   border-bottom: #17181a;
@@ -395,6 +397,14 @@ body {
 }
 
 /* Contact Form */
+.maincontact {
+  color: #f4f4f4;
+  width: 66%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 0;
+}
+
 .contact {
   flex-basis: 30rem;
 }
@@ -450,9 +460,10 @@ button[type="submit"] {
   opacity: 0.9;
   color: #000;
   background-color: #f4f4f4;
-  margin-top: 1rem;
+  margin: 1rem auto;
   justify-content: center;
   align-items: center;
+  text-align: center
 }
 
 .reveal-img,
@@ -994,10 +1005,6 @@ body.hide {
     display: none;
   }
 
-  .main-footer {
-    font-size: 0.1rem;
-  }
-
   .rm {
     display: none;
   }
@@ -1023,7 +1030,7 @@ body.hide {
     margin-top: 6rem;
   }
 
-  /* FLex Grid */
+  /* FLex Grid gallery*/
   .flex-grid .row {
     display: flex;
     flex-wrap: wrap;
