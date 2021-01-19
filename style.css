@@ -970,7 +970,7 @@ body.hide {
   .review-nr {
     font-size: 8rem;
   }
-  
+
   .nav-bar {
     display: block;
   }
@@ -990,10 +990,16 @@ body.hide {
     display: block;
   }
 
+  .nav-links h3,
+  h2 {
+    padding: 0.5rem 0;
+  }
+
   .contact h2,
   h3 {
     font-size: 2rem;
     text-align: center;
+    padding: 0.5rem 0;
   }
 
   .contact p {
@@ -1068,5 +1074,4 @@ body.hide {
   #main-footer {
     z-index: 1;
   }
-
 }
