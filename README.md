@@ -6,6 +6,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Sources](#sources)
 
 
 ## General info 
@@ -41,3 +42,11 @@ The requirements:
 
 ## Setup
 To run this project, open the 'index.html' file located  in the root folder
+
+
+## Sources
+This project is inspired by: 
+- DevEd's The Creative JS Course https://developedbyed.com/
+- Traversy Media's Modern HTML & CSS From The Beginning https://www.udemy.com/course/modern-html-css-from-the-beginning/
+- Traversy Media's Bootstrap 4 From Scratch with 5 Projects https://www.udemy.com/course/bootstrap-4-from-scratch-with-5-projects/
+
