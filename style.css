@@ -992,22 +992,21 @@ body.hide {
 
   .nav-links h3,
   h2 {
-    padding: 0.5rem 0;
+    padding: 1rem 0;
   }
 
   .contact h2,
   h3 {
     font-size: 1rem;
     text-align: center;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
   }
 
   .contact p {
     font-size: 1rem;
-    /* padding: 0.5rem; */
-    margin: 0;
+  
+    margin: 0 auto;
     text-align: center;
-    line-height: 0;
   }
 
   .text-fields {
