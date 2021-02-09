@@ -44,7 +44,6 @@
   </header>
   <main data-barba="container" data-barba-namespace="contactus">
 
-    <!-- Main contact  -->
     <div class="maincontact">
       <h2>Contact us</h2>
       <p>
@@ -52,13 +51,14 @@
         <br>Email: ilkestonheating@gmail.com
       </p>
       <div>
-        <form action="POST" name="contactmain" method="POST" data-netlify="true" >
+        <form action="POST" name="contactmain" method="POST" data-netlify="true" data-netlify-recaptcha="true">
           <div class="text-fields">
             <input type="text" name="name" class="text-input name-input" placeholder="Name">
             <input type="email" name="email" class="text-input email-input" placeholder="Email Address">
             <input type="text" name="phone" class="text-input phone-input" placeholder="Phone Number">
             <textarea class="text-input message-input" name="message" placeholder="Enter Message"></textarea>
           </div>
+          <div data-netlify-recaptcha="true"></div>
           <button type="submit" class="btn-light">Submit</button>
         </form>
       </div>
